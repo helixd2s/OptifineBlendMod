@@ -14,7 +14,9 @@ blend.<program>.<0-7>=<off|src dst srcA dstA>
 
 ## Setup
 
-TODO... 
+1. Download package from [here](https://github.com/helixd2s/OptifineBlendMod/releases), and unzip archive
+2. Put `optifine-blend-mod-<version>` into `mods/` directory, or use MultiMC.
+3. Install Optifabric and Optifine as `mods/` (tested with `OptiFine_1.16.5_HD_U_G7_pre4sc3`). 
 
 ## License
 
