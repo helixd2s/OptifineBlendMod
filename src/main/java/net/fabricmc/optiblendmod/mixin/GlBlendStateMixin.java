@@ -1,20 +1,14 @@
-package net.fabricmc.optimod.mixin;
+package net.fabricmc.optiblendmod.mixin;
 
-import net.fabricmc.optimod.GlBlendSubState;
-import net.fabricmc.optimod.ducks.GlBlendStateAccess;
+import net.fabricmc.optiblendmod.GlBlendSubState;
+import net.fabricmc.optiblendmod.ducks.GlBlendStateAccess;
 import net.optifine.render.GlBlendState;
-import net.optifine.shaders.config.ShaderPackParser;
-import org.apache.commons.lang3.reflect.FieldUtils;
-import org.lwjgl.opengl.GL11;
-import org.lwjgl.opengl.GL40;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
-import org.spongepowered.asm.mixin.gen.Accessor;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.ArrayList;
 

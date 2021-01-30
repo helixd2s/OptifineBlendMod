@@ -1,8 +1,7 @@
-package net.fabricmc.optimod.mixin;
+package net.fabricmc.optiblendmod.mixin;
 
-import com.mojang.blaze3d.platform.GlStateManager;
-import net.fabricmc.optimod.ducks.GlBlendStateAccess;
-import net.fabricmc.optimod.ducks.ProgramAccess;
+import net.fabricmc.optiblendmod.ducks.GlBlendStateAccess;
+import net.fabricmc.optiblendmod.ducks.ProgramAccess;
 import net.optifine.render.GlBlendState;
 import net.optifine.shaders.Program;
 import org.spongepowered.asm.mixin.Mixin;

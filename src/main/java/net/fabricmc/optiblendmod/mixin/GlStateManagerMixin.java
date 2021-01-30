@@ -1,12 +1,10 @@
-package net.fabricmc.optimod.mixin;
+package net.fabricmc.optiblendmod.mixin;
 
 import com.mojang.blaze3d.platform.GlStateManager;
-import net.fabricmc.optimod.GlBlendSubState;
-import net.fabricmc.optimod.ducks.GlBlendStateAccess;
+import net.fabricmc.optiblendmod.GlBlendSubState;
+import net.fabricmc.optiblendmod.ducks.GlBlendStateAccess;
 import net.optifine.render.GlBlendState;
 import net.optifine.util.LockCounter;
-import org.lwjgl.opengl.GL11;
-import org.lwjgl.opengl.GL40;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;

@@ -1,8 +1,6 @@
-package net.fabricmc.optimod;
+package net.fabricmc.optiblendmod;
 
 import net.fabricmc.api.ModInitializer;
-import net.optifine.shaders.Program;
-import net.optifine.shaders.Shaders;
 
 public class OptiMod implements ModInitializer {
     @Override

@@ -1,13 +1,9 @@
-package net.fabricmc.optimod;
+package net.fabricmc.optiblendmod;
 
-import com.mojang.blaze3d.platform.GlStateManager;
-import net.fabricmc.optimod.ducks.GlBlendStateAccess;
-import net.fabricmc.optimod.mixin.GlBlendStateMixin;
+import net.fabricmc.optiblendmod.ducks.GlBlendStateAccess;
 import net.optifine.render.GlBlendState;
-import org.apache.commons.lang3.reflect.FieldUtils;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL40;
-import org.spongepowered.asm.mixin.Shadow;
 
 public class GlBlendSubState {
     private int binding = 0;

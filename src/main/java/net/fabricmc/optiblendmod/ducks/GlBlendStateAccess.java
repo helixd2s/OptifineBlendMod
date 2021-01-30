@@ -1,8 +1,7 @@
-package net.fabricmc.optimod.ducks;
+package net.fabricmc.optiblendmod.ducks;
 
-import net.fabricmc.optimod.GlBlendSubState;
+import net.fabricmc.optiblendmod.GlBlendSubState;
 import net.optifine.render.GlBlendState;
-import net.optifine.shaders.config.RenderScale;
 
 import java.util.ArrayList;
 
