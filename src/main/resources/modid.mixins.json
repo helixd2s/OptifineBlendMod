@@ -6,10 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "ShaderPackParserMixin",
-    "GlBlendStateMixin",
-    "GlStateManagerMixin",
-    "ProgramMixin"
+    "GlStateManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

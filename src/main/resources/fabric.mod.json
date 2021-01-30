@@ -3,7 +3,7 @@
   "id": "modid",
   "version": "${version}",
 
-  "name": "OptiMod",
+  "name": "OptiBlendMod",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
     "Me!"
@@ -18,8 +18,11 @@
 
   "environment": "*",
   "entrypoints": {
+    "mm:early_risers": [
+      "net.fabricmc.optiblendmod.setup.OptiBlendSetup"
+    ],
     "main": [
-      "net.fabricmc.optiblendmod.OptiMod"
+      "net.fabricmc.optiblendmod.OptiBlendMod"
     ]
   },
   "mixins": [
