@@ -27,7 +27,7 @@ public class GlStateManagerMixin {
         {
             //System.out.println("Needs apply NEW alpha blending...");
             for (int i=0;i<8;i++) {
-                GL40.glDisablei(GL11.GL_BLEND, i);
+                //GL40.glDisablei(GL11.GL_BLEND, i);
             }
         }
 

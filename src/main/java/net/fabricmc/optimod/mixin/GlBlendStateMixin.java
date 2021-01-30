@@ -74,7 +74,10 @@ public class GlBlendStateMixin implements GlBlendStateAccess {
     @Override
     public void setSubState(int slot, GlBlendSubState state) {
         if (prtStates == null) { prtStates = new ArrayList<GlBlendSubState>(); };
-        if (prtStates.size() <= slot) { prtStates.ensureCapacity(slot+1); };
+        //if (prtStates.size() <= slot) { prtStates.ensureCapacity(slot+1); };
+        for (int i=prtStates.size();i<=slot;i++) {
+            prtStates.add(new GlBlendSubState(slot, enabled, srcFactor, dstFactor, srcFactorAlpha, dstFactorAlpha));
+        }
         GlBlendSubState newState = new GlBlendSubState(state); // clone state for thread safe
         prtStates.set(slot, newState);
     }
@@ -82,7 +85,10 @@ public class GlBlendStateMixin implements GlBlendStateAccess {
     @Override
     public void setSubState(int slot, GlBlendState state) {
         if (prtStates == null) { prtStates = new ArrayList<GlBlendSubState>(); };
-        if (prtStates.size() <= slot) { prtStates.ensureCapacity(slot+1); };
+        //if (prtStates.size() <= slot) { prtStates.ensureCapacity(slot+1); };
+        for (int i=prtStates.size();i<=slot;i++) {
+            prtStates.add(new GlBlendSubState(slot, enabled, srcFactor, dstFactor, srcFactorAlpha, dstFactorAlpha));
+        }
         GlBlendSubState newState = new GlBlendSubState(slot, state); // clone state for thread safe
         prtStates.set(slot, newState);
     }
@@ -104,7 +110,7 @@ public class GlBlendStateMixin implements GlBlendStateAccess {
     public void applyHead(CallbackInfo info) {
         System.out.println("Needs apply NEW alpha blending...");
         for (int i=0;i<8;i++) {
-            GL40.glDisablei(GL11.GL_BLEND, i);
+            //GL40.glDisablei(GL11.GL_BLEND, i);
         }
     }
 

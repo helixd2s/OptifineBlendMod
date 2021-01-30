@@ -1,5 +1,6 @@
 package net.fabricmc.optimod.mixin;
 
+import net.fabricmc.optimod.ducks.GlBlendStateAccess;
 import net.fabricmc.optimod.ducks.ProgramAccess;
 import net.fabricmc.optimod.ducks.ShaderPackParserAccess;
 import net.minecraft.client.render.WorldRenderer;
@@ -35,8 +36,7 @@ public class ShaderPackParserMixin implements ShaderPackParserAccess {
 
     // TODO: place into loop
     @Inject(at = @At("TAIL"), method = "parseBlendStates(Ljava/util/Properties;)V", remap = false)
-    private static void parseBlendStates(Properties props, CallbackInfo info)
-    {
+    private static void parseBlendStates(Properties props, CallbackInfo info) throws IllegalAccessException {
         for (String s : (Set<String>)(Set<?>)props.keySet())
         {
             String[] astring = Config.tokenize(s, ".");
@@ -61,7 +61,9 @@ public class ShaderPackParserMixin implements ShaderPackParserAccess {
 
                         if (glblendstate != null)
                         {
-                            ((ProgramAccess)program).setBlendSubState(parseInt(s3), glblendstate);
+                            //((ProgramAccess)program).setBlendSubState(parseInt(s3), glblendstate);
+                            GlBlendState blendState = (GlBlendState) FieldUtils.readField(program, "blendState", true);
+                            ((GlBlendStateAccess)blendState).setSubState(parseInt(s3), glblendstate);
                         }
                     }
                 }
