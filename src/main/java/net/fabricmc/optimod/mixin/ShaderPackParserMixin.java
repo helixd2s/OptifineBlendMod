@@ -61,9 +61,9 @@ public class ShaderPackParserMixin implements ShaderPackParserAccess {
 
                         if (glblendstate != null)
                         {
-                            //((ProgramAccess)program).setBlendSubState(parseInt(s3), glblendstate);
-                            GlBlendState blendState = (GlBlendState) FieldUtils.readField(program, "blendState", true);
-                            ((GlBlendStateAccess)blendState).setSubState(parseInt(s3), glblendstate);
+                            ((ProgramAccess)program).setBlendSubState(parseInt(s3), glblendstate);
+                            //GlBlendState blendState = (GlBlendState) FieldUtils.readField(program, "blendState", true);
+                            //((GlBlendStateAccess)blendState).setSubState(parseInt(s3), glblendstate);
                         }
                     }
                 }
