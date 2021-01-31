@@ -12,6 +12,11 @@ I added those really working options.
 blend.<program>.<0-7>=<off|src dst srcA dstA>
 ```
 
+### Issue tracker of Optifine
+
+- [Optifine feature request](https://github.com/sp614x/optifine/issues/5263)
+- [Blend modes](https://www.khronos.org/opengl/wiki/Blending)
+
 ## Setup
 
 1. Download package from [here](https://github.com/helixd2s/OptifineBlendMod/releases), and unzip archive
