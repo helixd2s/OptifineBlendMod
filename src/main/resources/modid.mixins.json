@@ -6,7 +6,8 @@
   "mixins": [
   ],
   "client": [
-    "GlStateManagerMixin"
+    "GlStateManagerMixin",
+    "GlStateManagerAccess"
   ],
   "injectors": {
     "defaultRequire": 1

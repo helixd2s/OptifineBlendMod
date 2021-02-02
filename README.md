@@ -9,6 +9,10 @@ This is mod, that works through Optifabric and mixins with Optifine. This is Fab
 I added those really working options.
 
 ```
+# required for working (TODO to fix it)
+blend.<program>=<off|src dst srcA dstA>
+
+# set per render-target blending
 blend.<program>.<0-7>=<off|src dst srcA dstA>
 ```
 
