@@ -4,6 +4,8 @@
   "mixins": [
     "ShaderPackParserMixin",
     "GlBlendStateMixin",
-    "ProgramMixin"
+    "ProgramMixin",
+    "GlStateManagerMixin",
+    "GlStateManagerAccess"
   ]
 }
