@@ -13,6 +13,8 @@ public class ProgramMixin implements ProgramAccess {
     private GlBlendState blendState;
 
     public void setBlendSubState(int binding, GlBlendState glblendstate) {
-        ((GlBlendStateAccess)blendState).setSubState(binding, glblendstate);
+        if (blendState != null) {
+            ((GlBlendStateAccess) blendState).setSubState(binding, glblendstate);
+        }
     }
 }
