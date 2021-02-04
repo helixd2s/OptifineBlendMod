@@ -2,10 +2,6 @@
   "parent": "modid.mixins.json",
   "package": "net.fabricmc.optiblendmod.mixin",
   "mixins": [
-    "ShaderPackParserMixin",
-    "GlBlendStateMixin",
-    "ProgramMixin",
-    "GlStateManagerMixin",
     "GlStateManagerAccess"
   ]
 }
