@@ -6,12 +6,12 @@ This is mod, that works through Optifabric and mixins with Optifine. This is Fab
 
 ### Issue tracker of Optifine
 
-- [Optifine feature request](https://github.com/sp614x/optifine/issues/5263)
+- [Optifine feature request](https://github.com/sp614x/optifine/issues/5263) (closed, implemented)
 - [Blend modes](https://www.khronos.org/opengl/wiki/Blending)
 
-## It no more needed anymore... 
+## This mod is no longer needed...
 
-Optifine now has got own feature... 
+Optifine has got its own version of this feature.
 
 ## License
 
