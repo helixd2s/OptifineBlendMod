@@ -21,16 +21,9 @@ blend.<program>.<0-7>=<off|src dst srcA dstA>
 - [Optifine feature request](https://github.com/sp614x/optifine/issues/5263)
 - [Blend modes](https://www.khronos.org/opengl/wiki/Blending)
 
-## Required mods
+## It no more needed anymore... 
 
-- **IMPORTANT!** [OptiFine 1.16.5_HD_U_G7_pre5](https://optifine.net/downloads) 
-- [Optifabric](https://minecraft.curseforge.com/projects/optifabric) with **Fabric**
-
-## Setup
-
-1. Download package from [here](https://github.com/helixd2s/OptifineBlendMod/releases), and unzip archive
-2. Put `optifine-blend-mod-<version>` into `mods/` directory, or use MultiMC.
-3. Install [Optifabric](https://minecraft.curseforge.com/projects/optifabric) and [OptiFine](https://optifine.net/downloads) as `mods/`. 
+Optifine now has got own feature... 
 
 ## License
 
